@@ -1,0 +1,21 @@
+.player {
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    width: 100%;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: left;
+    background-color: black;
+    height: 180px;
+    width: 204px;
+}
+
+.player-info {
+    justify-content: right;
+    background-color: #141414;
+    height: 180px;
+    width: 1239px;
+}
