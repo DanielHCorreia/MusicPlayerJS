@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    border: green 1px solid;
+    border: white 1px solid;
 }
 
 .player {
@@ -25,6 +25,7 @@ body {
     flex-direction: row-reverse;
     height: 180px;
     width: 1239px;
+    position: relative;
 }
 
 .player-info-logo {
@@ -32,8 +33,50 @@ body {
     flex-direction: row;
     align-self: right;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 30px;
+    padding-left: 150px;
+    padding-right: 70px;
+}
+
+.player-info-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 700px;
+    margin-left: 50px;
+    margin-right: 150px;
+}
+
+.player-info-band {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    color: #D3D3D3;
+}
+
+.player-info-music {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 39px;
+    color: #D3D3D3;
+}
+
+.player-info-bar {
+    position: absolute;
+    background: rgb(82, 133, 82);
+    height: 1%;
+    width: 90%;
+    left: 44px;
+    bottom: 41px;
+}
+
+.player-bar-point {
+    position: absolute;
+    padding-bottom: 2px;
 }
 
 .player-controls-container {
