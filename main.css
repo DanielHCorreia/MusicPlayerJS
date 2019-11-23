@@ -8,6 +8,7 @@ body {
     flex-direction: row;
     height: 180px;
     width: 100%;
+    border-radius: 50px;
 }
 
 .player-controls {
@@ -70,13 +71,14 @@ body {
     background: rgb(82, 133, 82);
     height: 1%;
     width: 90%;
+    /* width máximo = 90% */
     left: 44px;
     bottom: 41px;
 }
 
 .player-bar-point {
     position: absolute;
-    padding-bottom: 2px;
+    top: 0;
 }
 
 .player-controls-container {
@@ -89,12 +91,14 @@ body {
 
 .controls-container-backward {
     color: rgba(211, 211, 211, 0.65);
+    padding-left: 40px;
 }
 
 .controls-container-play {
-    padding: 8px;
+    padding: 20px
 }
 
 .controls-container-foward {
     color: rgba(211, 211, 211, 0.65);
+    padding-right: 40px;
 }
