@@ -147,6 +147,9 @@ body {
     border-bottom: rgb(28, 0, 128) 2px solid;
 }
 
+
+/* Responsibidade */
+
 @media (max-width: 950px) {
     .player-info-band {
         font-size: 14px;
@@ -195,9 +198,6 @@ body {
         padding-top: 45px;
     }
     .player-info-titles {
-        width: 100%;
-        margin-left: 50px;
-        margin-right: 150px;
         margin-bottom: 50px;
     }
 }
