@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    border: white 1px solid;
+    border: green 3px groove;
 }
 
 .player {
@@ -44,7 +44,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    width: 700px;
+    width: 100%;
     margin-left: 50px;
     margin-right: 150px;
 }
@@ -75,6 +75,11 @@ body {
     /* width máximo = 90% */
     left: 44px;
     bottom: 41px;
+}
+
+.info-logo-i {
+    margin-left: -8px;
+    margin-top: 8px;
 }
 
 .player-bar-point {
@@ -140,4 +145,59 @@ body {
 .controls-container-foward:active {
     padding-bottom: 10px;
     border-bottom: rgb(28, 0, 128) 2px solid;
+}
+
+@media (max-width: 950px) {
+    .player-info-band {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .player-info-music {
+        font-size: 16px;
+        line-height: 14px;
+    }
+    .player-info-logo {
+        position: absolute;
+        margin-top: 0px;
+        padding-right: 0px;
+        margin-right: 50px;
+        right: 10px;
+    }
+    .player-info {
+        height: 100px;
+    }
+    .player-controls {
+        height: 100px;
+    }
+    .player {
+        height: 100px;
+    }
+    .controls-container-backward {
+        margin-left: 30px;
+        width: 15px;
+        height: 15px;
+    }
+    .controls-container-play {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 25px;
+        height: 25px;
+    }
+    .controls-container-foward {
+        margin-right: 25px;
+        width: 15px;
+        height: 15px;
+    }
+    .player-controls {
+        width: 204px;
+    }
+    .player-controls-container {
+        padding-top: 45px;
+    }
+    .player-info-titles {
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 150px;
+        margin-bottom: 50px;
+    }
 }
