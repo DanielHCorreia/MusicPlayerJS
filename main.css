@@ -71,7 +71,7 @@ body {
     position: absolute;
     background: rgb(82, 133, 82);
     height: 1%;
-    width: 90%;
+    width: 0%;
     /* width máximo = 90% */
     left: 44px;
     bottom: 41px;
@@ -85,6 +85,7 @@ body {
 .player-bar-point {
     position: absolute;
     top: 0;
+    left: 0
 }
 
 .player-controls-container {
@@ -101,6 +102,9 @@ body {
     width: 25px;
     height: 25px;
 }
+
+
+/* efeitos de mouse */
 
 .controls-container-backward:hover {
     padding-bottom: 10px;
