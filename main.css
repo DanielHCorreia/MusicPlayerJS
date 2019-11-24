@@ -34,6 +34,7 @@ body {
     flex-direction: row;
     align-self: right;
     align-items: center;
+    justify-content: left;
     padding-left: 150px;
     padding-right: 70px;
 }
@@ -86,19 +87,57 @@ body {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 80px;
 }
 
 .controls-container-backward {
     color: rgba(211, 211, 211, 0.65);
-    padding-left: 40px;
+    margin-left: 40px;
+    width: 25px;
+    height: 25px;
+}
+
+.controls-container-backward:hover {
+    padding-bottom: 10px;
+    border-bottom: green 2px solid;
+}
+
+.controls-container-backward:active {
+    padding-bottom: 10px;
+    border-bottom: rgb(28, 0, 128) 2px solid;
 }
 
 .controls-container-play {
-    padding: 20px
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.controls-container-play:hover {
+    padding-bottom: 10px;
+    border-bottom: green 2px solid;
+}
+
+.controls-container-play:active {
+    padding-bottom: 10px;
+    border-bottom: rgb(28, 0, 128) 2px solid;
 }
 
 .controls-container-foward {
     color: rgba(211, 211, 211, 0.65);
-    padding-right: 40px;
+    margin-right: 40px;
+    width: 25px;
+    height: 25px;
+}
+
+.controls-container-foward:hover {
+    padding-bottom: 10px;
+    border-bottom: green 2px solid;
+}
+
+.controls-container-foward:active {
+    padding-bottom: 10px;
+    border-bottom: rgb(28, 0, 128) 2px solid;
 }
