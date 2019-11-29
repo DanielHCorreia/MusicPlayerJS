@@ -29,6 +29,7 @@ body {
     position: relative;
 }
 
+
 .player-info-logo {
     display: flex;
     flex-direction: row;
@@ -69,12 +70,23 @@ body {
 
 .player-info-bar {
     position: absolute;
-    background: rgb(82, 133, 82);
+    background: rgb(37, 196, 37);
     height: 1%;
     width: 0%;
     /* width máximo = 90% */
     left: 44px;
     bottom: 41px;
+}
+
+.player-backgroundbar{
+    position: absolute;
+    background: rgb(235, 245, 235);
+    height: 1%;
+    width: 90%;
+    /* width máximo = 90% */
+    left: 44px;
+    bottom: 41px;
+    z-index: 0;
 }
 
 .info-logo-i {
@@ -84,8 +96,10 @@ body {
 
 .player-bar-point {
     position: absolute;
-    top: 0;
-    left: 0
+    top: -3px;
+    left: 99%;
+    width:11px;
+    margin-bottom: 2px;
 }
 
 .player-controls-container {
