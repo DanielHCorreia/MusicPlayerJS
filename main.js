@@ -37,3 +37,24 @@ audioElement.addEventListener('timeupdate', () => {
     progressBar.style.width = `${90 *audioElement.currentTime/audioElement.duration}%`;
     /* elipseProgressBar.style.left = `${300 *audioElement.currentTime/audioElement.duration}%` */
 });
+
+
+/* document.querySelector('#meio').addEventListener('mousemove', function(event) {
+    var posX = event.clientX,
+        posY = event.clientY;
+        console.log('posição x'+posX)
+        console.log(document.getElementById('meio').offsetWidth)
+  });
+ */
+
+  $("#meio").click(function (e) {
+    var dataDiv = $("#meio").offset();
+    var clickX = e.pageX - dataDiv.left;
+    var clickY = e.pageY - dataDiv.top;
+
+  /*   var percentXImg = clickX * 100 / $("#meio").width();
+    var percentYImg = clickY * 100 / $("#meio").height(); */
+    console.log(clickX);
+    console.log(clickY);
+
+});
