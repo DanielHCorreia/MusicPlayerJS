@@ -39,17 +39,22 @@ audioElement.addEventListener('timeupdate', () => {
         } = audioElement;
      */
     progressBar.style.width = `${90 *audioElement.currentTime/audioElement.duration}%`;
+    $("#hiddenProgressBar") ((audioElement.duration - audioElement.currentTime)/60);
+
     /* elipseProgressBar.style.left = `${300 *audioElement.currentTime/audioElement.duration}%` */
 });
 
 
  //Mudar a música com base no click da barra de progresso.
-  $("#backgroundBar").click(function (e) {
-    let dataDiv = $("#backgroundBar").offset();
+  $("#hiddenProgressBar").click(function (e) {
+    let dataDiv = $("#hiddenProgressBar").offset();
     let clickX = e.pageX - dataDiv.left;
-    let tamanhoBarrafundo = $('#backgroundBar').width();
+    let tamanhoBarrafundo = $('#hiddenProgressBar').width();
     let porcentagemBarra = (clickX/tamanhoBarrafundo);
     audioElement.currentTime = porcentagemBarra*audioElement.duration;
+
+    let tempoRestante = ((audioElement.duration - audioElement.currentTime)/60);
+    console.log(tempoRestante);
 
 
 

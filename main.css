@@ -11,6 +11,16 @@ body {
     border-radius: 50px;
 }
 
+.player-hiddenBar{
+    position: absolute;
+    height: 5%;
+    width: 90%;
+    /* width máximo = 90% */
+    left: 44px;
+    bottom: 39px;
+    z-index: 2;
+
+}
 .player-controls {
     display: flex;
     justify-content: left;
