@@ -39,7 +39,7 @@ audioElement.addEventListener('timeupdate', () => {
         } = audioElement;
      */
     progressBar.style.width = `${90 *audioElement.currentTime/audioElement.duration}%`;
-    $("#hiddenProgressBar") ((audioElement.duration - audioElement.currentTime)/60);
+   /*  $("#hiddenProgressBar") = ((audioElement.duration - audioElement.currentTime)/60); */
 
     /* elipseProgressBar.style.left = `${300 *audioElement.currentTime/audioElement.duration}%` */
 });

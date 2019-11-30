@@ -11,7 +11,7 @@ body {
     border-radius: 50px;
 }
 
-.player-hiddenBar{
+.player-hiddenBar {
     position: absolute;
     height: 5%;
     width: 90%;
@@ -19,8 +19,8 @@ body {
     left: 44px;
     bottom: 39px;
     z-index: 2;
-
 }
+
 .player-controls {
     display: flex;
     justify-content: left;
@@ -39,6 +39,15 @@ body {
     position: relative;
 }
 
+.player-info-volume {
+    background-color: green;
+    color: white;
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
 
 .player-info-logo {
     display: flex;
@@ -88,7 +97,7 @@ body {
     bottom: 41px;
 }
 
-.player-backgroundbar{
+.player-backgroundbar {
     position: absolute;
     background: rgb(235, 245, 235);
     height: 1%;
@@ -108,7 +117,7 @@ body {
     position: absolute;
     top: -4px;
     left: 99%;
-    width:11px;
+    width: 11px;
     margin-bottom: 2px;
 }
 
@@ -126,7 +135,6 @@ body {
     width: 25px;
     height: 25px;
 }
-
 
 /* efeitos de mouse */
 
@@ -174,7 +182,6 @@ body {
     padding-bottom: 10px;
     border-bottom: rgb(28, 0, 128) 2px solid;
 }
-
 
 /* Responsibidade */
 
