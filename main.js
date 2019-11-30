@@ -38,34 +38,34 @@ audioElement.addEventListener('timeupdate', () => {
             duration
         } = audioElement;
      */
-    progressBar.style.width = `${90 *audioElement.currentTime/audioElement.duration}%`;
-   /*  $("#hiddenProgressBar") = ((audioElement.duration - audioElement.currentTime)/60); */
+    progressBar.style.width = `${90 * audioElement.currentTime / audioElement.duration}%`;
+    /*  $("#hiddenProgressBar") = ((audioElement.duration - audioElement.currentTime)/60); */
 
     /* elipseProgressBar.style.left = `${300 *audioElement.currentTime/audioElement.duration}%` */
 });
 
 
- //Mudar a música com base no click da barra de progresso.
-  $("#hiddenProgressBar").click(function (e) {
+//Mudar a música com base no click da barra de progresso.
+$("#hiddenProgressBar").click(function (e) {
     let dataDiv = $("#hiddenProgressBar").offset();
     let clickX = e.pageX - dataDiv.left;
     let tamanhoBarrafundo = $('#hiddenProgressBar').width();
-    let porcentagemBarra = (clickX/tamanhoBarrafundo);
-    audioElement.currentTime = porcentagemBarra*audioElement.duration;
+    let porcentagemBarra = (clickX / tamanhoBarrafundo);
+    audioElement.currentTime = porcentagemBarra * audioElement.duration;
 
-    let tempoRestante = ((audioElement.duration - audioElement.currentTime)/60);
+    let tempoRestante = ((audioElement.duration - audioElement.currentTime) / 60);
     console.log(tempoRestante);
 
 
 
 });
 
-$("#hiddenVolumeBar").click(function (e){
+$("#hiddenVolumeBar").click(function (e) {
 
     let dataDiv = $("#hiddenVolumeBar").offset();
     let clickX = e.pageY - dataDiv.top; //distancia pro top.
     /* let volumePretendido = tamanho */
-     let volumePretendido = Math.abs(clickX -100);
-     console.log(volumePretendido);
-     
+    let volumePretendido = Math.abs(clickX - 100);
+    console.log(volumePretendido);
+
 })
