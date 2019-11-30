@@ -53,19 +53,20 @@ $("#hiddenProgressBar").click(function (e) {
     let porcentagemBarra = (clickX / tamanhoBarrafundo);
     audioElement.currentTime = porcentagemBarra * audioElement.duration;
 
-    let tempoRestante = ((audioElement.duration - audioElement.currentTime) / 60);
-    console.log(tempoRestante);
-
-
-
+    //tempo restante da música
+    /* let tempoRestante = ((audioElement.duration - audioElement.currentTime) / 60);
+    console.log(tempoRestante); */
 });
 
 $("#hiddenVolumeBar").click(function (e) {
 
     let dataDiv = $("#hiddenVolumeBar").offset();
-    let clickX = e.pageY - dataDiv.top; //distancia pro top.
+    let clickX = e.pageY - dataDiv.top;
     /* let volumePretendido = tamanho */
-    let volumePretendido = Math.abs(clickX - 100);
+    let volumePretendido = (Math.abs(clickX - 100));
+    $("#volumeBar").css('height',volumePretendido+'%');
     console.log(volumePretendido);
+
+    audioElement.volume = (volumePretendido/100); // varia de 0 a 1
 
 })
