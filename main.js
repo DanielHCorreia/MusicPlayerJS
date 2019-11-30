@@ -43,23 +43,14 @@ audioElement.addEventListener('timeupdate', () => {
 });
 
 
-/* document.querySelector('#meio').addEventListener('mousemove', function(event) {
-    var posX = event.clientX,
-        posY = event.clientY;
-        console.log('posição x'+posX)
-        console.log(document.getElementById('meio').offsetWidth)
-  });
- */
-
+ //Mudar a música com base no click da barra de progresso.
   $("#backgroundBar").click(function (e) {
     let dataDiv = $("#backgroundBar").offset();
     let clickX = e.pageX - dataDiv.left;
-    let clickY = e.pageY - dataDiv.top;
     let tamanhoBarrafundo = $('#backgroundBar').width();
+    let porcentagemBarra = (clickX/tamanhoBarrafundo);
+    audioElement.currentTime = porcentagemBarra*audioElement.duration;
 
-  /*   var percentXImg = clickX * 100 / $("#meio").width();
-    var percentYImg = clickY * 100 / $("#meio").height(); */
-    console.log(clickX);
-    console.log( $('#meio').width());
+
 
 });
