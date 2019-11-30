@@ -5,7 +5,7 @@ const btnFoward = player.querySelector('.controls-container-foward');
 const btnBackward = player.querySelector('.controls-container-backward');
 const progressBar = player.querySelector('#progress-bar');
 const elipseProgressBar = player.querySelector('#progress-bar-elipse');
-
+audioElement.volume = 0.6; // Inicia o volume com 60% 
 let statusMusica = 0;
 
 btnPlayPause.addEventListener('click', () => {
@@ -62,11 +62,9 @@ $("#hiddenVolumeBar").click(function (e) {
 
     let dataDiv = $("#hiddenVolumeBar").offset();
     let clickX = e.pageY - dataDiv.top;
-    /* let volumePretendido = tamanho */
-    let volumePretendido = (Math.abs(clickX - 100));
-    $("#volumeBar").css('height',volumePretendido+'%');
-    console.log(volumePretendido);
-
-    audioElement.volume = (volumePretendido/100); // varia de 0 a 1
+    let alturaBarra = $('#hiddenVolumeBar').height();
+    let volumePretendido = Math.abs((clickX / alturaBarra) - 1);
+    $("#volumeBar").css('height', (volumePretendido * 100) + '%');
+    audioElement.volume = (volumePretendido); // varia de 0 a 1
 
 })
