@@ -23,6 +23,10 @@ btnFoward.addEventListener('click', () => {
     audioElement.currentTime += 10;
 });
 
+/* progressBar.addEventListener('click', () => {
+    audioElement.currentTime = audioElement.duration
+});
+ */
 btnBackward.addEventListener('click', () => {
 
     audioElement.currentTime -= 10;
@@ -47,14 +51,15 @@ audioElement.addEventListener('timeupdate', () => {
   });
  */
 
-  $("#meio").click(function (e) {
-    var dataDiv = $("#meio").offset();
-    var clickX = e.pageX - dataDiv.left;
-    var clickY = e.pageY - dataDiv.top;
+  $("#backgroundBar").click(function (e) {
+    let dataDiv = $("#backgroundBar").offset();
+    let clickX = e.pageX - dataDiv.left;
+    let clickY = e.pageY - dataDiv.top;
+    let tamanhoBarrafundo$('#backgroundBar').width();
 
   /*   var percentXImg = clickX * 100 / $("#meio").width();
     var percentYImg = clickY * 100 / $("#meio").height(); */
     console.log(clickX);
-    console.log(clickY);
+    console.log( $('#meio').width());
 
 });
