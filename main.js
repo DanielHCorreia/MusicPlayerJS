@@ -55,7 +55,7 @@ audioElement.addEventListener('timeupdate', () => {
     let dataDiv = $("#backgroundBar").offset();
     let clickX = e.pageX - dataDiv.left;
     let clickY = e.pageY - dataDiv.top;
-    let tamanhoBarrafundo$('#backgroundBar').width();
+    let tamanhoBarrafundo = $('#backgroundBar').width();
 
   /*   var percentXImg = clickX * 100 / $("#meio").width();
     var percentYImg = clickY * 100 / $("#meio").height(); */
