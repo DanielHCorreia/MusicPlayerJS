@@ -41,12 +41,22 @@ body {
 
 .player-info-volume {
     background-color: green;
-    color: white;
+    width: 6px;
+    height: 60%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index:1px;
+}
+
+.player-info-backgroundVolume {
+    background-color: whitesmoke;
     width: 6px;
     height: 100%;
     position: absolute;
     bottom: 0px;
     left: 0px;
+    z-index:0px;
 }
 
 .player-info-logo {
