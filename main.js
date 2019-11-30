@@ -59,3 +59,13 @@ audioElement.addEventListener('timeupdate', () => {
 
 
 });
+
+$("#hiddenVolumeBar").click(function (e){
+
+    let dataDiv = $("#hiddenVolumeBar").offset();
+    let clickX = e.pageY - dataDiv.top; //distancia pro top.
+    /* let volumePretendido = tamanho */
+     let volumePretendido = Math.abs(clickX -100);
+     console.log(volumePretendido);
+     
+})
